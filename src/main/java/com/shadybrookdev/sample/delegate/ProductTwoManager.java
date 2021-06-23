@@ -2,11 +2,13 @@ package com.shadybrookdev.sample.delegate;
 
 import com.shadybrookdev.sample.model.ProductTwo;
 import com.shadybrookdev.sample.repository.ProductTwoRepo;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
+@Component
 public class ProductTwoManager implements RunManager<ProductTwo> {
 
     final ProductTwoRepo productTwoRepo;

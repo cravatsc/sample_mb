@@ -3,11 +3,13 @@ package com.shadybrookdev.sample.delegate;
 import com.shadybrookdev.sample.config.SampleConfig;
 import com.shadybrookdev.sample.model.ProductOne;
 import com.shadybrookdev.sample.repository.ProductOneRepo;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
+@Component
 public class ProductOneManager implements RunManager<ProductOne> {
     final ProductOneRepo productOneRepo;
 
