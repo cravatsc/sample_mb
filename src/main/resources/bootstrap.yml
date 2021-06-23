@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: SampleApplication
+aws:
+  bucketName: test-bucket
